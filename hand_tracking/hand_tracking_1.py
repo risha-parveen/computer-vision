@@ -5,6 +5,7 @@ import time
 cap = cv2.VideoCapture(0)
 
 mpHands = mp.solutions.hands
+
 hands=mpHands.Hands()
 mpDraw = mp.solutions.drawing_utils
 
@@ -24,7 +25,7 @@ while True:
 
 				h, w, c= img.shape
 				cx, cy=int(lm.x*w), int(lm.y*h)
-				print(id,cx,cy)
+				#print(id,cx,cy)
 				
 				if id==0:
 					cv2.circle(img,(cx,cy),15,(254,23,200),cv2.FILLED)
