@@ -5,7 +5,7 @@ import position_tracking_module as ptm
 cap = cv2.VideoCapture(0)
 pTime=0
 cTime=0
-detector=ptm.PositionDetector(cam=1)
+detector=ptm.PositionDetector(cam=True)
 while True:
 	success, img=cap.read()
 	if success:

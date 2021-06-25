@@ -3,7 +3,7 @@ import mediapipe as mp
 import time
 
 class PositionDetector():
-	def __init__(self, mode=False, upBody=False,smooth=True, detectionCon=0.5,trackCon=.5,cam=0):
+	def __init__(self, mode=False, upBody=False,smooth=True, detectionCon=0.5,trackCon=.5,cam=False):
 		self.mode=mode
 		self.upBody=upBody
 		self.smooth=smooth
@@ -15,7 +15,7 @@ class PositionDetector():
 		self.cam=cam
 
 	def findPose(self, img, draw=True):
-		if self.cam!=1:
+		if self.cam==False:
 			img=cv2.resize(img, (0,0), fx=.2,fy=.2,interpolation=cv2.INTER_AREA)
 		imgRGB=cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 		self.results=self.pose.process(imgRGB)
