@@ -34,6 +34,7 @@ class FaceDetector():
 					cv2.putText(img, str(int(detection.score[0]*100))+"%",
 						(bbox[0], bbox[1]-10),cv2.FONT_HERSHEY_PLAIN,1.5,self.color,2)
 		return img, bboxes
+		
 	def fancyDraw(self, img, bbox, l=35, t=5, rt=1):
 		x,y,w,h=bbox
 		x1, y1= x+w,y+h
