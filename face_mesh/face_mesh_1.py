@@ -15,6 +15,7 @@ drawSpec=mpDraw.DrawingSpec(thickness=1, circle_radius=1)
 while True:
 	success, img=cap.read()
 	if success:
+		
 		img=cv2.resize(img, (0,0), fx=.2,fy=.2, interpolation=cv2.INTER_AREA)
 		imgRGB=cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 		results=faceMesh.process(imgRGB)

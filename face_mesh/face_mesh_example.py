@@ -11,6 +11,7 @@ cTime=0
 
 detector=fmm.FaceMeshDetector(cam=True)
 while True:
+	
 	success, img=cap.read()
 	if success:
 		img, faces=detector.findFaceMesh(img)
