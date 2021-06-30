@@ -5,7 +5,6 @@ import position_tracking_module as ptm
 
 cap=cv2.VideoCapture('AiTrainer/curls.mp4')
 
-
 pTime=0
 cTime=0
 

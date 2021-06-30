@@ -40,7 +40,6 @@ class PositionDetector():
 		return self.lmlist
 
 	def findAngle(self, img ,p1, p2, p3, draw=True):
-
 		x1, y1= self.lmlist[p1][1:]
 		x2, y2= self.lmlist[p2][1:]
 		x3, y3= self.lmlist[p3][1:]
