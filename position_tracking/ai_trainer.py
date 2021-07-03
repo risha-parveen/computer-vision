@@ -9,6 +9,7 @@ pTime=0
 cTime=0
 
 detector=ptm.PositionDetector(detectionCon=0.9)
+
 per=0
 direction=1
 count=0
@@ -54,4 +55,5 @@ while True:
 			break
 	else:
 		break
+
 cap.release()
