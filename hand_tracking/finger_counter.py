@@ -3,6 +3,7 @@ import time
 import os 
 import hand_tracking_module as htm
 
+
 cap=cv2.VideoCapture(0)
 
 folderpath='fingers'
